@@ -175,7 +175,6 @@ let second = k*24*60*60;
     if (day >=305 && day <= 334) console.log('Ноябрь. Осень');
     if (day >=335 && day <= 365) console.log('Декабоь. Зима');
 
-
 }
 
 
