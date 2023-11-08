@@ -131,9 +131,7 @@ while( i>=8 ) {
         if (str[i + 1] === ' ') {
             st = Number(str[i - 1] + str[i]);
             if (st > max) { max = st; }
-            if (st < min) {
-                min = st;
-            }    
+            if (st < min) {min = st; }    
         }
     }
     document.write (`Исходная строка ${str}<br> min = ${min}, max = ${max}`);*/
@@ -142,13 +140,24 @@ while( i>=8 ) {
  // task 10
 
  {
-    let num = 4587;
+    let num = 628;
 
     let sum = 0;
+    const n = String(num);
+    let rev = '';
 
-    for (let i = 0; i <= String(num).length; i++) {
-        console.log(i);
+    for (let i = 0; i <= n.length; i++) 
+    console.log(`в числе num ${n.length} чисел`);
+
+
+    for (let i = 0; i < n.length; i++) {
+        sum += Number(n[i]);
     }
-    console.log(`в числе num ${String(num).length} чисел`);
+    console.log(sum);
 
+
+    for (let i = n.length - 1; i >= 0 ; i--) {
+        rev += n[i];
+    }
+    console.log(`${rev}`);
  }
